@@ -35,11 +35,20 @@
   </head>
   <body>
     <div id="root">
-      <ul>
-        <li v-show="userEmails.length === 10" v-for="userEmail in userEmails">
-          {{userEmail}}
-        </li>
-      </ul>
+      <div class="container height d-flex flex-column justify-content-center">
+        <div class="card">
+          <h1 class="text-center card-header">Lista email</h1>
+          <ul class="list-unstyled list-group list-group-flush">
+            <li
+              class="text-center list-group-item"
+              v-show="userEmails.length === 10"
+              v-for="userEmail in userEmails"
+            >
+              {{userEmail}}
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </body>
 </html>
