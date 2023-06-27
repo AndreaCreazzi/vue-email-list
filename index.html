@@ -34,6 +34,10 @@
     <script defer src="js/script.js"></script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <ul>
+        <li v-for="userEmail in userEmails">{{userEmail}}</li>
+      </ul>
+    </div>
   </body>
 </html>
