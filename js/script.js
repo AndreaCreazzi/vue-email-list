@@ -15,12 +15,12 @@ const app = createApp({
   },
   methods: {
     getUserEmail() {
-      axios.get(endlink).then((res) => {
-        for (let i = 1; i <= 10; i++) {
+      for (let i = 1; i <= 10; i++) {
+        axios.get(endlink).then((res) => {
           this.userEmails.push(res.data.response);
           console.log(this.userEmails);
-        }
-      });
+        });
+      }
     },
   },
   created() {
