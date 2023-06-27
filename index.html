@@ -36,7 +36,9 @@
   <body>
     <div id="root">
       <ul>
-        <li v-for="userEmail in userEmails">{{userEmail}}</li>
+        <li v-show="userEmails.length === 10" v-for="userEmail in userEmails">
+          {{userEmail}}
+        </li>
       </ul>
     </div>
   </body>
